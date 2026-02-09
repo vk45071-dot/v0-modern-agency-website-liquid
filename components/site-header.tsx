@@ -53,8 +53,10 @@ export function SiteHeader() {
         <div className="flex h-14 items-center justify-between px-6 liquid-glass-header rounded-full">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-1.5">
-            <Image src="/icons/skitbit-white.svg" alt="Skitbit logo" width={20} height={20} className="h-5 w-5" />
-            <span className="font-semibold tracking-wide text-white">Skitbit</span>
+            <Image src="/icons/onlinepngtools.png" alt="Skitbit logo" width={20} height={20} className="h-5 w-5" />
+            <p className="text-sm uppercase tracking-[0.25em] text-white">
+              WIFI<span className="text-base text-[1.3em] text-white">X</span>ert
+            </p>
           </Link>
 
           {/* Desktop Nav with Services Dropdown */}
@@ -133,8 +135,10 @@ export function SiteHeader() {
               <SheetContent side="right" className="liquid-glass border-gray-800 p-0 w-64 flex flex-col">
                 {/* Brand Header */}
                 <div className="flex items-center gap-1.5 px-4 py-4 border-b border-gray-800">
-                  <Image src="/icons/skitbit-white.svg" alt="Skitbit logo" width={24} height={24} className="h-6 w-6" />
-                  <span className="font-semibold tracking-wide text-white text-lg">Skitbit</span>
+                  <Image src="/icons/onlinepngtools.png" alt="Skitbit logo" width={24} height={24} className="h-6 w-6" />
+                  <p className="text-sm uppercase tracking-[0.25em] text-lime-300/80">
+              WIFI<span className="text-base text-[1.3em] text-lime-300 drop-shadow-[0_0_6px_rgba(132,204,22,0.6)]">X</span>ert
+            </p>
                 </div>
 
                 {/* Nav Links */}
