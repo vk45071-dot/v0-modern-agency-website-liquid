@@ -11,9 +11,9 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Skitbit | 3D Animation Made Simple, Reliable & Scalable",
+  title: "WIFIXERT | 3D Animation Made Simple, Reliable & Scalable",
   description:
-    "From product launches to full-scale campaigns, Skitbit delivers 3D animation that's fast, consistent, and built to wow your audience.",
+    "From product launches to full-scale campaigns, WIFIXERT delivers 3D animation that's fast, consistent, and built to wow your audience.",
   generator: "v0.app",
 }
 
@@ -45,7 +45,7 @@ export default function RootLayout({
           {`
             function updateFavicon() {
               const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-              const faviconHref = darkMode ? '/icons/skitbit-white.svg' : '/icons/favicon-dark.svg';
+              const faviconHref = darkMode ? '/icons/wifixert-logo.png' : '/icons/wifixert-logo.png';
               let link = document.querySelector("link[rel~='icon']");
               if (!link) {
                 link = document.createElement('link');

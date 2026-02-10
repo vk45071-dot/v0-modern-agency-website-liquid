@@ -50,9 +50,9 @@ export default function AdminLogin() {
             <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
               <span className="text-black font-bold text-lg">SK</span>
             </div>
-            <span className="text-2xl font-semibold text-white">Skitbit</span>
+            <span className="text-2xl font-semibold text-white">WIFIXERT</span>
           </div>
-          <h1 className="text-4xl font-bold text-white mt-12">Welcome to Skitbit Admin</h1>
+          <h1 className="text-4xl font-bold text-white mt-12">Welcome to WIFIXERT Admin</h1>
           <p className="text-purple-100 mt-4 max-w-md">
             Manage your website content, pricing, and settings from one central dashboard.
           </p>
@@ -73,9 +73,9 @@ export default function AdminLogin() {
         {/* Mobile header - only visible on mobile */}
         <div className="flex md:hidden items-center gap-3 mb-8 w-full">
           <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-            <span className="text-black font-bold text-lg">SK</span>
+            <span className="text-black font-bold text-lg">WX</span>
           </div>
-          <span className="text-2xl font-semibold text-white">Skitbit</span>
+          <span className="text-2xl font-semibold text-white">WIFIXERT</span>
         </div>
 
         <div className="w-full max-w-md">

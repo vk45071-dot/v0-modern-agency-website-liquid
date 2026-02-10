@@ -16,8 +16,8 @@ export function Hero() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center py-14 sm:py-20">
           <div className="mb-5 flex items-center gap-2">
-            <Image src="/icons/skitbit-white.svg" alt="Skitbit logo" width={32} height={32} className="h-8 w-8" />
-            <p className="text-sm uppercase tracking-[0.25em] text-lime-300/80">skitbit</p>
+            <Image src="/icons/wifixert-logo.png" alt="Wifixert logo" width={36} height={36} className="h-9 w-9" />
+            <p className="text-sm uppercase tracking-[0.25em] text-lime-300/80">WIFI<span className="text-base font-extrabold">X</span>ERT</p>
           </div>
           <h1 className="mt-3 text-center text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
             <span className="block">HIGH-IMPACT</span>
@@ -63,7 +63,7 @@ function PhoneCard({
         <LazyVideo
           src={
             videoSrc ??
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/b0f3222371106db366a14ca1c29cef55-1b1EWVSa4w3FL2zslcaCGYTy9vcxjF.mp4"
+            "/images/b0f3222371106db366a14ca1c29cef55.mp4"
           }
           className="absolute inset-0 h-full w-full object-cover"
           autoplay={true}
@@ -79,7 +79,7 @@ function PhoneCard({
             <div className="text-3xl font-bold leading-snug text-white/90">{title}</div>
             <p className="text-xs text-white/70">{sub}</p>
             <div className="mt-3 inline-flex items-center rounded-full bg-black/40 px-2 py-0.5 text-[10px] uppercase tracking-wider text-lime-300">
-              {tone === "calm" ? "skitbit app" : tone}
+              {tone === "calm" ? "wifixert app" : tone}
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ const phoneData = [
     tone: "results",
     gradient: "from-[#0b0b0b] via-[#0f172a] to-[#020617]",
     videoSrc:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/A%20new%20chapter%20in%20the%20story%20of%20success.__Introducing%20the%20new%20TAG%20Heuer%20Carrera%20Day-Date%20collection%2C%20reimagined%20with%20bold%20colors%2C%20refined%20finishes%2C%20and%20upgraded%20functionality%20to%20keep%20you%20focused%20on%20your%20goals.%20__Six%20-nDNoRQyFaZ8oaaoty4XaQz8W8E5bqA.mp4",
+      "/images/a-20new-20chapter-20in-20the-20story-20of-20success.mp4",
   },
   {
     title: "Speed",
@@ -109,7 +109,7 @@ const phoneData = [
     tone: "social",
     gradient: "from-[#001028] via-[#0b355e] to-[#052e5e]",
     videoSrc:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Timeline%201-Ku3Y2Hgaw8hCiFEFg1ELtYp631rSzR.webm",
+      "/images/timeline-201.webm",
   },
   {
     title: "Standout",

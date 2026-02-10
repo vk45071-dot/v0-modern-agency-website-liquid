@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 
 export default function PhoneVideo({
-  src = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/b0f3222371106db366a14ca1c29cef55-1b1EWVSa4w3FL2zslcaCGYTy9vcxjF.mp4",
+  src = "/images/b0f3222371106db366a14ca1c29cef55.mp4",
   className = "",
   poster,
 }: { src?: string; className?: string; poster?: string }) {
@@ -91,7 +91,7 @@ export default function PhoneVideo({
       playsInline
       preload="none"
       poster={poster}
-      aria-label="Skitbit app preview video"
+      aria-label="Wifixert app preview video"
       disableRemotePlayback
     >
       <source data-src={src} type={src.endsWith(".webm") ? "video/webm" : "video/mp4"} />

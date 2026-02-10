@@ -74,7 +74,7 @@ export function AppverseFooter() {
                 <div className="relative aspect-[9/19] w-full overflow-hidden rounded-2xl bg-black">
                   {/* Lazy-loaded video fills the screen */}
                   <LazyVideo
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Timeline%202-YFaCK7cEiHWSMRv8XEHaLCoYj2SUAi.mp4"
+                    src="/images/timeline-202.mp4"
                     className="absolute inset-0 h-full w-full object-cover"
                     autoplay={true}
                     loop={true}
@@ -106,9 +106,9 @@ export function AppverseFooter() {
           <div className="grid gap-8 md:grid-cols-[1.2fr_1fr_1fr]">
             {/* Brand */}
             <div className="space-y-3">
-              <div className="flex items-center gap-1.5">
-                <Image src="/icons/skitbit-white.svg" alt="Skitbit logo" width={24} height={24} className="h-6 w-6" />
-                <span className="text-xl font-semibold text-white">Skitbit</span>
+              <div className="flex items-center gap-2">
+                <Image src="/icons/wifixert-logo.png" alt="Wifixert logo" width={28} height={28} className="h-7 w-7" />
+                <span className="text-xl font-semibold text-white">WIFI<span className="text-2xl font-extrabold">X</span>ERT</span>
               </div>
               <p className="max-w-sm text-sm text-neutral-400">{content.tagline}</p>
             </div>

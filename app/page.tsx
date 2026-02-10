@@ -53,13 +53,13 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": "https://theskitbit.com/",
-    name: "Skitbit | 3D Animation Made Simple, Reliable & Scalable",
+    name: "WIFIXERT | 3D Animation Made Simple, Reliable & Scalable",
     description:
-      "From product launches to full-scale campaigns, Skitbit delivers 3D animation that’s fast, consistent, and built to wow your audience.",
+      "From product launches to full-scale campaigns, WIFIXERT delivers 3D animation that’s fast, consistent, and built to wow your audience.",
     url: "https://theskitbit.com/",
     mainEntity: {
       "@type": "Organization",
-      name: "Skitbit",
+      name: "WIFIXERT",
       url: "https://theskitbit.com",
       sameAs: [
         "https://twitter.com/theskitbit",

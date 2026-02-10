@@ -10,7 +10,7 @@ export function LogoMarquee() {
   const logos = [
     { name: "VICTORINOX", image: "/icons/Victorinox.png" },
     { name: "", image: "/icons/Trumpp.png" },
-    { name: "Skitbit", image: "/icons/Poedagarr.png" },
+    { name: "WIFIXERT", image: "/icons/Poedagarr.png" },
     { name: "VK", image: "/icons/Supp.png" },
     { name: "TechCrunch", image: "/icons/SHKUP.png" },
     { name: "MailChimp", image: "/icons/Persona.png" },

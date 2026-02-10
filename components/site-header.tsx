@@ -52,9 +52,9 @@ export function SiteHeader() {
       <div className="container mx-auto max-w-4xl">
         <div className="flex h-14 items-center justify-between px-6 liquid-glass-header rounded-full">
           {/* Brand Logo */}
-          <Link href="/" className="flex items-center gap-1.5">
-            <Image src="/icons/skitbit-white.svg" alt="Skitbit logo" width={20} height={20} className="h-5 w-5" />
-            <span className="font-semibold tracking-wide text-white">Skitbit</span>
+          <Link href="/" className="flex items-center gap-2">
+            <Image src="/icons/wifixert-logo.png" alt="Wifixert logo" width={28} height={28} className="h-7 w-7" />
+            <span className="font-semibold tracking-wide text-white">WIFI<span className="text-xl font-extrabold">X</span>ERT</span>
           </Link>
 
           {/* Desktop Nav with Services Dropdown */}
@@ -132,9 +132,9 @@ export function SiteHeader() {
               </SheetTrigger>
               <SheetContent side="right" className="liquid-glass border-gray-800 p-0 w-64 flex flex-col">
                 {/* Brand Header */}
-                <div className="flex items-center gap-1.5 px-4 py-4 border-b border-gray-800">
-                  <Image src="/icons/skitbit-white.svg" alt="Skitbit logo" width={24} height={24} className="h-6 w-6" />
-                  <span className="font-semibold tracking-wide text-white text-lg">Skitbit</span>
+                <div className="flex items-center gap-2 px-4 py-4 border-b border-gray-800">
+                  <Image src="/icons/wifixert-logo.png" alt="Wifixert logo" width={28} height={28} className="h-7 w-7" />
+                  <span className="font-semibold tracking-wide text-white text-lg">WIFI<span className="text-xl font-extrabold">X</span>ERT</span>
                 </div>
 
                 {/* Nav Links */}
