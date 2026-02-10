@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import LazyVideo from "./lazy-video"
+import testVideo from "@/public/video/test.gif"
 
 export function Hero() {
   const buttonNew = (
@@ -60,21 +61,32 @@ function PhoneCard({
   gradient?: string
   videoSrc?: string
 }) {
+  const isGif = videoSrc?.endsWith(".gif")
+
   return (
     <div className="relative rounded-[28px] glass-border bg-neutral-900 p-2">
       <div className="relative aspect-[9/19] w-full overflow-hidden rounded-2xl bg-black">
-        <LazyVideo
-          src={
-            videoSrc ??
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/b0f3222371106db366a14ca1c29cef55-1b1EWVSa4w3FL2zslcaCGYTy9vcxjF.mp4"
-          }
-          className="absolute inset-0 h-full w-full object-cover"
-          autoplay={true}
-          loop={true}
-          muted={true}
-          playsInline={true}
-          aria-label={`${title} - ${sub}`}
-        />
+        {isGif ? (
+          <img
+            src={videoSrc}
+            alt={`${title} - ${sub}`}
+            className="absolute inset-0 h-full w-full object-cover"
+            loading="lazy"
+          />
+        ) : (
+          <LazyVideo
+            src={
+              videoSrc ??
+              "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/b0f3222371106db366a14ca1c29cef55-1b1EWVSa4w3FL2zslcaCGYTy9vcxjF.mp4"
+            }
+            className="absolute inset-0 h-full w-full object-cover"
+            autoplay
+            loop
+            muted
+            playsInline
+            aria-label={`${title} - ${sub}`}
+          />
+        )}
 
         <div className="relative z-10 p-3">
           <div className="mx-auto mb-3 h-1.5 w-16 rounded-full bg-white/20" />
@@ -91,14 +103,14 @@ function PhoneCard({
   )
 }
 
+
 const phoneData = [
   {
     title: "Conversions",
     sub: "Turn clicks into paying customers.",
     tone: "results",
     gradient: "from-[#0b0b0b] via-[#0f172a] to-[#020617]",
-    videoSrc:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/A%20new%20chapter%20in%20the%20story%20of%20success.__Introducing%20the%20new%20TAG%20Heuer%20Carrera%20Day-Date%20collection%2C%20reimagined%20with%20bold%20colors%2C%20refined%20finishes%2C%20and%20upgraded%20functionality%20to%20keep%20you%20focused%20on%20your%20goals.%20__Six%20-nDNoRQyFaZ8oaaoty4XaQz8W8E5bqA.mp4",
+    videoSrc:"/video/test.gif",
   },
   {
     title: "Speed",
@@ -112,7 +124,7 @@ const phoneData = [
     tone: "social",
     gradient: "from-[#001028] via-[#0b355e] to-[#052e5e]",
     videoSrc:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Timeline%201-Ku3Y2Hgaw8hCiFEFg1ELtYp631rSzR.webm",
+      "/video/test.gif",
   },
   {
     title: "Standout",
